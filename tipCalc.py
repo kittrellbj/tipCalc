@@ -14,3 +14,9 @@ serviceQuality = ["Poor", "Below Average", "Standard", "Excellent", "Outstanding
 print("Your bill is $" + str(billTotal) + ". Use the following chart to decide your tip: ") # Chart heading
 for i, percent in enumerate(tipPercentages, start=0): # Chart constructor
     print("If service quality was " + serviceQuality[i] + ", the recommended tip is: $" + str(round(billTotal * percent, 2)))
+
+# Condensed format
+print("Your bill is $" + str(billTotal) + ". Use the following chart for tip percentages: ")
+print("Service Quality : Tip")
+for i, percent in enumerate(tipPercentages, start=0): # Chart constructor
+    print(serviceQuality[i] + " : $" + str(round(billTotal * percent, 2)))
