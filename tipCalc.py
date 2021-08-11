@@ -10,7 +10,6 @@
 billTotal = float(input("Enter total bill: ")) # receive bill total from patron
 tipPercentages = [.05,.10,.15,.20,.25] # list tip percentages
 serviceQuality = ["Poor", "Below Average", "Standard", "Excellent", "Outstanding"] # Service quality list
-i = 0 #iterator
 
 print("Your bill is $" + str(billTotal) + ". Use the following chart to decide your tip: ") # Chart heading
 for i, percent in enumerate(tipPercentages, start=0): # Chart constructor
