@@ -19,4 +19,4 @@ for i, percent in enumerate(tipPercentages, start=0): # Chart constructor
 print("Your bill is $" + str(billTotal) + ". Use the following chart for tip percentages: ")
 print("Service Quality : Tip")
 for i, percent in enumerate(tipPercentages, start=0): # Chart constructor
-    print(serviceQuality[i] + " : $" + str(round(billTotal * percent, 2)))
+    print(serviceQuality[i] + " : $" + str(round(billTotal * percent, 2))) 
